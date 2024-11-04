@@ -1,2 +1,2 @@
-# 3rd-party-wall
+# 3rd Party Wall
  
