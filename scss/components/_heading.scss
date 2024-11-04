@@ -1,0 +1,50 @@
+// Section Heading
+.sectionTitle {
+  h6 {
+    font-weight: 700;
+    font-family: $bodyFont;
+    text-transform: capitalize;
+    margin-bottom: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 0;
+
+    + p {
+      margin-top: 8px;
+    }
+  }
+
+  h1 {
+    &.titleXL {
+      @include headingXL;
+    }
+
+    &.titleL {
+      @include headingL;
+    }
+  }
+
+  p {
+    margin-bottom: 0;
+
+    &.paraXL {
+      @include paraXl;
+    }
+
+    &.paraL {
+      @include paraL;
+    }
+
+    + p {
+      margin-top: 15px;
+    }
+  }
+
+  .btnSec {
+    margin: 24px 0 0;
+  }
+}

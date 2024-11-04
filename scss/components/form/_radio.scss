@@ -1,0 +1,41 @@
+// Radio
+.customRadio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  padding: 10px;
+  z-index: 4;
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid clr(light, outline);
+    z-index: -1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+  }
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:checked ~ .checkmark {
+      background-color: clr(primary, main);
+      border-color: clr(primary, focus);
+
+      &:after {
+        display: block;
+      }
+    }
+  }
+}

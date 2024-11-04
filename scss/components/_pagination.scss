@@ -1,0 +1,63 @@
+// Pagination
+.paginationSec {
+  .pagination {
+    .page-item {
+      .page-link {
+        font-size: 1em;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        color: clr(black, main);
+        background-color: clr(light, main);
+        border: none;
+        padding: 0;
+        white-space: nowrap;
+
+        &:hover,
+        &.active,
+        &:focus {
+          color: clr(light, outline);
+          background-color: clr(primary, main);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    li {
+      a,
+      span {
+        font-size: 1em;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        color: clr(black, main);
+        background-color: clr(light, main);
+        border: none;
+        padding: 0;
+        white-space: nowrap;
+
+        &:hover,
+        &.active,
+        &:focus {
+          color: clr(light, outline);
+          background-color: clr(primary, main);
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}

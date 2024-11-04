@@ -1,0 +1,39 @@
+// Btn
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 1.6;
+  text-align: center;
+  padding: 15px;
+  border: 2px solid transparent;
+  border-radius: 0;
+  white-space: nowrap;
+  box-shadow: none;
+  outline: none;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &Primary {
+    color: $secondaryClr !important;
+    background-color: $primaryClr !important;
+    border-color: darken($primaryClr, 15%) !important;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $secondaryClr !important;
+      background-color: darken($primaryClr, 15%) !important;
+      border-color: darken($primaryClr, 25%) !important;
+    }
+  }
+}

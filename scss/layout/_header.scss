@@ -1,0 +1,90 @@
+// Header
+.mainHeader {
+  background-color: transparent;
+  position: relative;
+
+  // Menubar
+  .navbar {
+    background-color: $secondaryClr;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    padding: 10px 0;
+
+    .navbar-brand {
+      padding: 0;
+
+      img {
+        height: 100px;
+
+        @include md {
+          height: 60px;
+        }
+      }
+    }
+
+    .navbar-toggler {
+      @include iconBox;
+      color: $whiteClr;
+      border-color: $whiteClr;
+      display: none;
+
+      @include md {
+        display: inline-flex;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1em;
+          font-size: 1.5em;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          color: $whiteClr;
+
+          @include md {
+            padding: 0.5em 1em;
+          }
+
+          &:hover,
+          &.active {
+            color: $primaryClr;
+          }
+        }
+      }
+    }
+
+    .navbar-collapse {
+      @include md {
+        position: absolute;
+        width: calc(100% + 30px);
+        top: 80px;
+        left: -15px;
+        padding: 0 24px;
+        background-color: darken($secondaryClr, 5%);
+      }
+    }
+
+    &.sticky {
+      position: fixed;
+      background-color: $secondaryClr;
+      animation-name: stickyTransition;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+      box-shadow: 0 0 16px rgba($blackClr, 1);
+
+      .navbar-brand {
+        img {
+          height: 80px;
+
+          @include md {
+            height: 60px;
+          }
+        }
+      }
+    }
+  }
+}

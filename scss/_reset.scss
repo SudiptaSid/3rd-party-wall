@@ -1,0 +1,138 @@
+// Reset
+* {
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: darken($whiteClr, 20%);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darken($whiteClr, 40%);
+    border-radius: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $bodyFont;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: darken($primaryClr, 20%);
+  background-color: $secondaryClr;
+  overflow-x: hidden;
+}
+
+a,
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+a {
+  text-transform: inherit;
+  text-decoration: none;
+  color: $primaryClr;
+  transition: var(--transition);
+
+  &:hover,
+  &:focus {
+    color: darken($primaryClr, 20%);
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+  }
+}
+
+button {
+  box-shadow: none !important;
+  outline: 0 !important;
+
+  &:focus,
+  &:active {
+    box-shadow: none !important;
+    outline: 0 !important;
+  }
+}
+
+input,
+select {
+  height: auto;
+}
+
+select {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+h1 {
+  @include headingOne;
+}
+
+h2 {
+  @include headingTwo;
+}
+
+h3 {
+  @include headingThree;
+}
+
+h4 {
+  @include headingFour;
+}
+
+h5 {
+  @include headingFive;
+}
+
+h6 {
+  @include headingSix;
+}
+
+p {
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul,
+ol {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+small {
+  font-size: 0.8em;
+}
+
+section {
+  position: relative;
+}
+
+hr {
+  border-color: darken($whiteClr, 40%);
+}

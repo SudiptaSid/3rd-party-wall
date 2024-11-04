@@ -1,0 +1,88 @@
+// Footer
+.mainFooter {
+  padding-top: 80px;
+  position: relative;
+  color: $whiteClr;
+  background-color: darken($secondaryClr, 5%);
+  overflow: hidden;
+  z-index: 4;
+
+  @include md {
+    padding-top: 50px;
+  }
+
+  .contactFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: inherit;
+
+    li,
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      em {
+        font-size: 1.5em;
+        color: $primaryClr;
+      }
+    }
+
+    a {
+      color: $whiteClr;
+
+      &:hover {
+        color: $primaryClr;
+      }
+    }
+  }
+
+  .logoSec {
+    a {
+      display: block;
+
+      img {
+        max-height: 100px;
+      }
+    }
+  }
+
+  .socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+
+    @include md {
+      justify-content: start;
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      color: $whiteClr;
+      background-color: $secondaryClr;
+      border-radius: 50%;
+
+      &:hover {
+        color: $secondaryClr;
+        background-color: $primaryClr;
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 24px 0;
+    margin-top: 80px;
+    border-top: 1px solid darken($whiteClr, 80%);
+
+    @include md {
+      margin-top: 50px;
+    }
+  }
+}

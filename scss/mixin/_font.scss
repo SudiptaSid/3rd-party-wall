@@ -1,0 +1,82 @@
+// Fonts
+$bodyFont: "PT Sans", sans-serif;
+
+@mixin headingXL {
+  font-size: 80px;
+
+  @include xl {
+    font-size: 60px;
+  }
+
+  @include lg {
+    font-size: 40px;
+  }
+}
+
+@mixin headingL {
+  font-size: 50px;
+
+  @include lg {
+    font-size: 30px;
+  }
+}
+
+@mixin headingOne {
+  font-size: 40px;
+
+  @include lg {
+    font-size: 26px;
+  }
+}
+
+@mixin headingTwo {
+  font-size: 32px;
+
+  @include lg {
+    font-size: 24px;
+  }
+}
+
+@mixin headingThree {
+  font-size: 28px;
+
+  @include lg {
+    font-size: 20px;
+  }
+}
+
+@mixin headingFour {
+  font-size: 24px;
+
+  @include lg {
+    font-size: 20px;
+  }
+}
+
+@mixin headingFive {
+  font-size: 20px;
+
+  @include lg {
+    font-size: 18px;
+  }
+}
+
+@mixin headingSix {
+  font-size: 16px;
+}
+
+@mixin paraXl {
+  font-size: 20px;
+
+  @include md {
+    font-size: 17px;
+  }
+}
+
+@mixin paraL {
+  font-size: 18px;
+
+  @include md {
+    font-size: 15px;
+  }
+}

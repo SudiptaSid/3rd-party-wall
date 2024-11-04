@@ -1,0 +1,63 @@
+// Google Font
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* Animation */
+@import "../vendors/animate.min.css";
+
+/* Line Icons */
+@import "../vendors/lineicons/icons.scss";
+
+/* Bootstrap */
+@import "../vendors/bootstrap/scss/bootstrap";
+
+/* Slick Slider */
+@import "../vendors/slickslider/slick";
+@import "../vendors/slickslider/slick-theme";
+
+/* Magnific Popup */
+@import "../vendors/magnific-popup/magnific-popup.css";
+
+/* Mixin */
+@import "mixin/color";
+@import "mixin/breakpoint";
+@import "mixin/font";
+@import "mixin/keyframe";
+@import "mixin/others";
+
+/* Base */
+@import "reset";
+
+/* Components */
+@import "components/form/buttons";
+@import "components/form/input";
+// @import "components/form/checkbox";
+// @import "components/form/radio";
+
+@import "components/loader";
+@import "components/backToTop";
+@import "components/heading";
+// @import "components/accordian";
+// @import "components/breadcrumb";
+// @import "components/dropdown";
+// @import "components/modal";
+// @import "components/pagination";
+@import "components/others";
+
+@import "components/cards/about";
+@import "components/cards/service";
+@import "components/cards/contact";
+
+/* Layout */
+@import "layout/header";
+@import "layout/footer";
+
+/* Plugin Edits */
+@import "plugins/bootstrap";
+@import "plugins/slickSlider";
+
+/* Section */
+@import "sections/heroBanner";
+@import "sections/about";
+@import "sections/service";
+@import "sections/project";
+@import "sections/contact";

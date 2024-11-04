@@ -1,0 +1,36 @@
+// One
+.contactCardOne {
+  .infoBox {
+    padding: 48px;
+    background-color: darken($secondaryClr, 5%);
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+    -ms-grid-columns: 40px 1fr;
+    grid-template-columns: 40px 1fr;
+    grid-column-gap: 30px;
+    height: 100%;
+
+    @include md {
+      padding: 24px;
+      -ms-grid-columns: 30px 1fr;
+      grid-template-columns: 30px 1fr;
+    }
+
+    .icon {
+      font-size: 3em;
+      color: $primaryClr;
+
+      @include md {
+        margin-bottom: 15px;
+      }
+    }
+
+    .desc {
+      p {
+        color: $whiteClr;
+      }
+    }
+  }
+}

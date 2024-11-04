@@ -1,0 +1,60 @@
+// Default
+.accordion {
+  .accordion-item {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+
+    .accordion-button {
+      font-size: 1em;
+      font-weight: 500;
+      text-transform: capitalize;
+      border-radius: 0;
+      background-color: transparent;
+      padding: 10px 15px;
+
+      &:after {
+        content: "\f107";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        width: auto;
+        height: auto;
+        border: none;
+        vertical-align: unset;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        background: unset;
+      }
+
+      &:not(.collapsed) {
+        box-shadow: none;
+
+        &:after {
+          transform: translateY(-50%) rotate(180deg);
+        }
+      }
+
+      &:hover,
+      &.active {
+        color: clr(primary, main);
+      }
+
+      &.noIcon {
+        &:after {
+          display: none;
+        }
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .accordion-body {
+      padding: 15px;
+    }
+  }
+}

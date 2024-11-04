@@ -1,0 +1,28 @@
+// Contact One
+.contactOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .sectionTitle {
+    p {
+      color: $whiteClr;
+    }
+  }
+
+  .contactForm {
+    padding: 48px;
+    background-color: darken($secondaryClr, 5%);
+
+    .btn {
+      text-transform: uppercase;
+      min-width: 200px;
+
+      @include md {
+        width: 100%;
+      }
+    }
+  }
+}

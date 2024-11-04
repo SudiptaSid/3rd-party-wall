@@ -1,0 +1,60 @@
+// Dots
+@mixin slickDotOne {
+  margin-top: 15px;
+  position: relative;
+  top: unset;
+  bottom: unset;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  li {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+
+    button {
+      width: 100%;
+      height: 100%;
+      background-color: $whiteClr;
+      border-radius: 50%;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &.slick-active {
+      button {
+        background-color: darken($whiteClr, 40%);
+      }
+    }
+  }
+}
+
+// Arrow
+@mixin slickArrowOne {
+  @include iconBox;
+  color: $whiteClr;
+  background-color: rgba($whiteClr, 0.2);
+  border-radius: 0;
+  z-index: 5;
+  transition: var(--transition);
+
+  &:before {
+    display: none;
+  }
+
+  &.slick-prev {
+    left: 0;
+  }
+
+  &.slick-next {
+    right: 0;
+  }
+
+  &:hover {
+    //color: clr(light, outline);
+    //background-color: clr(secondary, main);
+  }
+}

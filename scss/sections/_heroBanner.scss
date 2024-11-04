@@ -1,0 +1,54 @@
+// One
+.bannerArea {
+  overflow: hidden;
+
+  .singleBanner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include md {
+      padding: 100px 0;
+    }
+
+    .sectionTitle {
+      p {
+        color: $whiteClr;
+      }
+    }
+
+    .bannerBg,
+    .bannerOverly {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .bannerBg {
+      animation: zoomIn 15s linear infinite;
+    }
+
+    .bannerOverly {
+      background-color: $secondaryClr;
+      z-index: -1;
+      opacity: 0.6;
+    }
+  }
+
+  .slick-arrow {
+    @include slickArrowOne;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition);
+  }
+}

@@ -1,0 +1,22 @@
+// Breadcrumb
+.breadcrumb-wrap {
+  .breadcrumb {
+    margin-bottom: 0;
+
+    li {
+      text-transform: capitalize;
+      color: clr(light, outline);
+
+      a {
+        color: inherit;
+        font-weight: 600;
+      }
+
+      + li {
+        &:before {
+          color: inherit;
+        }
+      }
+    }
+  }
+}

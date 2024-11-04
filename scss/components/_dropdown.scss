@@ -1,0 +1,41 @@
+// Default Dropdown
+.dropdown {
+  .dropdown-toggle {
+    &:after {
+      content: "\eb11";
+      font-family: "lineicons";
+      font-size: 10px;
+      font-weight: 900;
+      border: none;
+      vertical-align: unset;
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  .dropdown-menu {
+    font-size: 1em;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: rgba(clr(black, main), 0.2) 0px 24px 48px;
+
+    li {
+      .dropdown-item {
+        color: clr(black, main);
+        font-weight: 400;
+        background: transparent;
+        padding: 6px 10px;
+        text-transform: capitalize;
+
+        &:hover {
+          color: clr(primary, main);
+          background-color: clr(light, hover);
+        }
+      }
+    }
+  }
+}

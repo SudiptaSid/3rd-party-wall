@@ -1,0 +1,12 @@
+// One
+.serviceOne {
+  padding: 100px 0;
+
+  @include md {
+    padding: 60px 0;
+  }
+
+  .serviceCardOne {
+    height: 100%;
+  }
+}

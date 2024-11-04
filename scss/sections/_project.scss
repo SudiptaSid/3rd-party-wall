@@ -1,0 +1,48 @@
+// One
+.projectOne {
+  padding-top: 100px;
+
+  @include md {
+    padding-top: 60px;
+  }
+
+  a {
+    display: block;
+    padding: 0 5px;
+    text-align: center;
+
+    span {
+      display: block;
+      font-weight: 700;
+      padding: 10px 15px;
+      background-color: darken($secondaryClr, 5%);
+    }
+  }
+
+  .slick-arrow {
+    @include slickArrowOne;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: var(--transition);
+    background-color: $secondaryClr;
+  }
+}
+
+img.mfp-img {
+  padding: 35px 0;
+}
+.mfp-title {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: $primaryClr;
+  background-color: $secondaryClr;
+  padding: 10px;
+}
+.mfp-counter {
+  top: -30px;
+  right: 10px;
+  font-weight: 700;
+  color: $secondaryClr;
+}

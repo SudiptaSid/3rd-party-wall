@@ -1,0 +1,47 @@
+// One
+.serviceCardOne {
+  padding: 32px 24px;
+  background-color: darken($secondaryClr, 5%);
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 4;
+  overflow: hidden;
+  min-height: 150px;
+
+  @include md {
+    min-height: 150px;
+    padding: 24px;
+  }
+
+  h5 {
+    margin-bottom: 0;
+  }
+
+  .icon {
+    flex-shrink: 0;
+
+    img {
+      width: 40px;
+    }
+  }
+
+  .count {
+    line-height: 1;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    font-size: 120px;
+    font-weight: 700;
+    color: rgba($whiteClr, 0.05);
+    z-index: -1;
+    transition: var(--transition);
+  }
+
+  &:hover {
+    .count {
+      transform: scale(1.5);
+    }
+  }
+}
